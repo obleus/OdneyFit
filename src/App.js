@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import { Box } from '@mui/material'
 
 import './App.css'
-import ExerciseDetail from './Pages/ExerciseDetail';
-import Home from './Pages/Home';
+import ExerciseDetail from './page/ExerciseDetail';
+import Home from './page/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <Box width='400px'>
+    <Box width='400px' sx ={{width: {xl: '1488px'}}} m='auto'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
